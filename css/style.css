@@ -4,3 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1 {
+    text-align: center;
+}
+.box {
+    max-width: 1000px;
+    width: 80%;
+    margin: 150px auto;
+}
+.btn {
+    padding: .75rem 3.75rem;
+    border-radius: 50rem;
+    background-color: rgb(233, 233, 43);
+    text-align: center;
+}
+.btn > h2 {
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#total {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+    
+}
