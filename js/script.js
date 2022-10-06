@@ -6,27 +6,31 @@ const userYear = parseInt(prompt("Quale è la tua età"));
 //Svolgimento:
 // prezzo calcolato al km
 const prize = 0.21*10;
-console.log(prize);
+/* console.log(prize); */
 //prezzo del biglietto 
 const subTotal = trackTotal * prize;
-console.log(subTotal);
+/* console.log(subTotal); */
 /* Sconto del 30% */
 const totalPercentageOne = subTotal * 30 / 100;
-console.log(totalPercentageOne);
+/* console.log(totalPercentageOne); */
 const discountPrizeOne = subTotal - totalPercentageOne;
-console.log(discountPrizeOne);
+/* console.log(discountPrizeOne); */
 /* Sconto del 40% */
 const totalPercentageTwo = subTotal * 40 / 100;
-console.log(totalPercentageTwo);
+/* console.log(totalPercentageTwo); */
 const discountPrizeTwo = subTotal - totalPercentageTwo;
-console.log(discountPrizeTwo);
+/* console.log(discountPrizeTwo); */
 
 /* ______________ */
-//ALTRIMENTI SE l'età è superiore ai 65 anni
-    //applicare sconto 40%
-
-// ALTRIMENTI
-    //Somma senza sconto
+//Se l'età è inferiore ai 18 anni
+if (userYear <= 18){
+    console.log(discountPrizeOne);
+//Altrimenti se l'età è superiore ai 65
+} else if (userYear >= 65) {
+    console.log(discountPrizeTwo);
+} else {
+    console.log(subTotal);
+}
 
 
 //Output
