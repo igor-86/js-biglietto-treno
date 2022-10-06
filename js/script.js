@@ -20,17 +20,19 @@ const totalPercentageTwo = subTotal * 40 / 100;
 /* console.log(totalPercentageTwo); */
 const discountPrizeTwo = subTotal - totalPercentageTwo;
 /* console.log(discountPrizeTwo); */
+let message = "";
 
 /* ______________ */
 //Se l'età è inferiore ai 18 anni
 if (userYear <= 18){
-    console.log(discountPrizeOne);
+    message = "Il prezzo sconto giovani, Totale: " + discountPrizeOne;
 //Altrimenti se l'età è superiore ai 65
 } else if (userYear >= 65) {
-    console.log(discountPrizeTwo);
+    message = "Il prezzo sconto over, Totale: " + discountPrizeTwo;
 } else {
-    console.log(subTotal);
+    message = "Prezzo Totale: " + subTotal;
 }
 
 
 //Output
+alert(message);
