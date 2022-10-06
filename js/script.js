@@ -5,7 +5,7 @@ const trackTotal = parseInt(prompt("Quanti km?"))
 const userYear = parseInt(prompt("Quale è la tua età"));
 //Svolgimento:
 // prezzo calcolato al km
-const prize = 0.21*10;
+const prize = 0.21;
 /* console.log(prize); */
 //prezzo del biglietto 
 const subTotal = trackTotal * prize;
@@ -26,12 +26,12 @@ const euro = "&euro;"
 /* ______________ */
 //Se l'età è inferiore ai 18 anni
 if (userYear <= 18){
-    message = "sconto giovani, Totale: " + discountPrizeOne;
+    message = "sconto giovani, Totale: " + discountPrizeOne.toFixed(2);
 //Altrimenti se l'età è superiore ai 65
 } else if (userYear >= 65) {
-    message = "sconto over, Totale: " + discountPrizeTwo;
+    message = "sconto over, Totale: " + discountPrizeTwo.toFixed(2);
 } else {
-    message = "prezzo pieno: " + subTotal;
+    message = "prezzo pieno: " + subTotal.toFixed(2);
 }
 
 
